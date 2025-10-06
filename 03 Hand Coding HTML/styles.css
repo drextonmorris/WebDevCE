@@ -24,6 +24,11 @@ nav ul {
     padding: 0 10px;
     list-style-type: none;
     display: flex;
+    min-height: 48px;
+    min-height: 48px;
+    display: flex; /* Ensures height applies properly */
+    align-items: center; /* Vertically centers text */
+    padding: 0 16px; /* Optional: adds horizontal spacing */
 }
 nav a {
     display: block;
@@ -32,6 +37,7 @@ nav a {
     font-size: 1.1rem;
     color: #038C7F;
     font-weight: 800;
+
 }
 
 nav li.active a {
@@ -102,15 +108,19 @@ main address {
 }
 main a {
     color: #038C7F;
+    text-decoration: none;
 }
 main a:hover {
     color: #593954;
+    text-decoration: none;
 }
 main a.phone {
     color: #593954;
+    text-decoration: none;
 }
 main a.phone:hover {
     color: white;
+    text-decoration: none;
 }
 
 
