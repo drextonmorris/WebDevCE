@@ -141,3 +141,31 @@ footer p {
     color: #333;
     letter-spacing: 3px;
 }
+
+figure.wrapped {
+  float: right;
+  width: 40%;
+  margin: 0 0 1rem 1rem;
+}
+figure.wrapped img {
+  width: 100%;
+  height: auto;
+}
+footer {
+  clear: both;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.gallery figure {
+  margin: 0;
+  text-align: center;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+}
