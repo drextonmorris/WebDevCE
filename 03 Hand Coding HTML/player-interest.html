@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Drexton Morris">
+    <meta name="description" content="Player interest form for football program">
+    <link rel="stylesheet" href="styles.css">
+    <title>Player Interest Form</title>
+</head>
+
+<body>
+
+<header>
+    <span>(logo) On The Ball</span>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="hardships.html">Hardships</a></li>
+        <li><a href="physical.html">Physical</a></li>
+        <li><a href="mental.html">Mental</a></li>
+        <li><a href="practice.html">Practice</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li class="active"><a href="player-interest.html">Player Interest</a></li>
+        <li><a href="images.html">Images</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2>Player Interest Form</h2>
+    <p>Fill out this form if you're interested in joining or learning more about the football program.</p>
+
+    <form method="get" action="thanks.html">
+
+        <!-- FIELDSET 1 -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label>
+                Full Name:
+                <input type="text" name="fullname" required>
+            </label>
+
+            <label>
+                Email Address:
+                <input type="email" name="email" required>
+            </label>
+
+            <label>
+                Phone Number:
+                <input type="tel" name="phone">
+            </label>
+        </fieldset>
+
+        <!-- FIELDSET 2 -->
+        <fieldset>
+            <legend>Player Preferences</legend>
+
+            <p>Preferred Position:</p>
+            <label><input type="radio" name="position" value="QB"> Quarterback</label>
+            <label><input type="radio" name="position" value="RB"> Running Back</label>
+            <label><input type="radio" name="position" value="WR"> Wide Receiver</label>
+
+            <p>What are you interested in? (Check all that apply)</p>
+            <label><input type="checkbox" name="interest" value="conditioning"> Conditioning</label>
+            <label><input type="checkbox" name="interest" value="film"> Film Study</label>
+            <label><input type="checkbox" name="interest" value="weightroom"> Weight Room</label>
+        </fieldset>
+
+        <!-- FIELDSET 3 -->
+        <fieldset>
+            <legend>Additional Details</legend>
+
+            <label>
+                Experience Level:
+                <select name="experience" required>
+                    <option value="">Select one</option>
+                    <option value="none">No Experience</option>
+                    <option value="some">Some Experience</option>
+                    <option value="advanced">Advanced Player</option>
+                </select>
+            </label>
+
+            <label>
+                Tell us about yourself:
+                <textarea name="bio" rows="5"></textarea>
+            </label>
+        </fieldset>
+
+        <button type="submit" class="submit-btn">Submit Form</button>
+
+    </form>
+
+    <address>
+        Wasatch High School <br>
+        930 E 500 S, <br>
+        Heber City, UT 84032 <br>
+        Call us at <a class="phone" href="tel:8005551234">800-555-1234</a> to schedule a visit
+    </address>
+</main>
+
+<footer>
+    <p>&copy; 2025 • Drexton Morris • Web Dev</p>
+</footer>
+
+</body>
+</html>
