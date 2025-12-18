@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo-wrap">
+        <img src="Images/logo.png" alt="Site Logo">
+        <span>Budget Vacations</span>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Destinations</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li class="active"><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h1>Request More Information</h1>
+
+    <form action="thanks.html" method="get">
+
+
+        <fieldset>
+            <legend>Your Info</legend>
+
+            <label>
+                Full Name:
+                <input type="text" name="fullname" required>
+            </label>
+
+            <label>
+                Email:
+                <input type="email" name="email" required>
+            </label>
+
+            <label>
+                Phone:
+                <input type="tel" name="phone">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Trip Details</legend>
+
+            <label>
+                Destination:
+                <select name="destination" required>
+                    <option value="">Choose one</option>
+                    <option value="lisbon">Lisbon</option>
+                    <option value="bali">Bali</option>
+                    <option value="costa-rica">Costa Rica</option>
+                </select>
+            </label>
+
+            <p>Budget Range:</p>
+            <label><input type="radio" name="budget" value="low" required> Under $1,000</label>
+            <label><input type="radio" name="budget" value="mid"> $1,000–$2,000</label>
+            <label><input type="radio" name="budget" value="high"> $2,000+</label>
+
+            <label>
+                Additional Comments:
+                <textarea name="comments" rows="5"></textarea>
+            </label>
+        </fieldset>
+
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2025 • Budget Vacations • Web Dev Project</p>
+</footer>
+
+</body>
+</html>
